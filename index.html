@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="nl"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="nl"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="nl"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="nl"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="nl"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>J. Mulder Houtimport BV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="eerstelinks.nl">
+    <link href="uploads/images/jmh_20130926175925.ico" rel="shortcut icon">
+
+    <!-- Le styles -->
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+
+    <link href="style/is-visitor%EF%B9%96v=1404163564.css" rel="stylesheet">
+    <link href="assets/fontselect-jquery-plugin/fontselect.css" rel="stylesheet">
+    <link href="css/cache/mulderhoutimport/1580294401.css" rel="stylesheet">
+
+
+    <script type="text/javascript">
+        var apiURL        = 'http://mulderhoutimport.nl/api/v1/';
+        var pathname      = 'mulderhoutimport';
+        var alignSexies   = [608, 610, 607, 609];
+        var currentLang   = 'nl';
+        var supportedLang = {"nl":{"text":"Nederlands","locale":"nl_NL"},"en":{"text":"English","locale":"en_GB"},"fr":{"text":"Fran\u00e7ais","locale":"fr_FR"},"de":{"text":"Deutsch","locale":"de_DE"},"es":{"text":"Espa\u00f1ol","locale":"es_ES"},"cz":{"text":"\u010ce\u0161tina","locale":"cs_CZ"}};
+        var lang          = {"form":{"modal":{"title":"Wijzig formulier","choose_form":"Kies een formulier","no_title":"Vul een titel in","no_text":"Vul een tekst in","no_title_and_no_text":"Vul een titel en een text in"},"messages":{"send_failure":"Dit formulier kan niet worden opgestuurd, neem contact op.","save_failure":"Mislukt om formlier op te slaan, mail ons even","field_is_required":"verplicht veld","fill_in_fields":"Vul wel alle verplichte velden in, deze zijn aangegeven met een asterisk (*)","no_formname":"Vul een naam in zodat het formulier later nogmaals gebruikt kan worden","invalid_formtype":"Dit type formulier is niet geldig, e-mail ons voor hulp","no_formtype":"Kies een formulier-type","no_product":"Je hebt een bestelformulier geselecteerd, maar geen producten toegevoegd. Voeg een product toe.","no_fields_selected":"Selecteer minimaal 1 veld wat een bezoeker kan invullen bij contactgegevens","no_email":"Vul een e-mailadres in. De inhoud van het formulier wordt daarnaartoe gestuurd.","no_valid_email":"Vul een geldig e-mailadres in. Anders kan je geen berichten niet ontvangen.","no_productname":"Geef je producten een naam"},"buttons":{"send":"Verstuur","close":"Sluiten","order":"Bestel","contact":"Contact","newsletter":"Nieuwsbrief"},"fields":{"name":{"text":"Naam","placeholder":"Naam"},"company":{"text":"Bedrijfsnaam","placeholder":"Naam"},"street":{"text":"Straat + nr.","placeholder":"Adres"},"zipcode":{"text":"Postcode","placeholder":"Postcode"},"city":{"text":"Plaats","placeholder":"Plaats"},"phone":{"text":"Telefoon","placeholder":"+31(0)10-000000"},"email":{"text":"E-mail","placeholder":"e-mail@adres.nl"},"custom":{"text":"Aangepast veld","placeholder":""},"questions":{"text":"Vragen","placeholder":"..."},"remarks":{"text":"Opmerkingen","placeholder":"..."},"other":{"ordered_products":"<p>Bestelde producten:<\/p>","thankyou":"Het formulier is ontvangen.","mail_subject_filled_form":"Ingevuld formulier op ","mail_content_filled_form":"<p>Beste %s,<\/p><p>Op %s is het formulier met de naam %s ingevuld. Dit zijn de gegevens:<\/p>"}}},"plaintext":{"messages":{"no_text":"Vul wel een tekst in"}},"video":{"messages":{"wrong_platform":"Je kan alleen Youtube en Vimeo filmpjes gebruiken. Voer de link (url) in van de pagina van het filmpje."}},"location":{"error_messages":{"wrong_zipcode":"De postcode moet bestaan uit 6 tekens: 1234AB","no_fields":"Vul minimaal 1 veld in"}},"image":{"error_messages":{"save_image_failure":"Mislukt om de bewerkte foto op te slaan","too_large":"Deze afbeelding is te groot, max %d MB","vague":"Er ging iets mis, probeer ander bestand","file_type_failure":"Er gaat iets mis met dit type bestand","aviary_warning":"Het kan zijn dat het bewerken van afbeeldingen tijdelijk niet kan"},"messages":{"upload_image":"Upload een afbeelding (.gif, .jpg, .jpeg of .png)"}},"hours":{"wrong_closure_time":"Sluitingstijd ligt voor de openingstijd op ","closed":"gesloten","by_appointment":"op afspraak"},"date":{"today":"vandaag","days":{"monday":"maandag","tuesday":"dinsdag","wednesday":"woensdag","thursday":"donderdag","friday":"vrijdag","saturday":"zaterdag","sunday":"zondag"}},"document":{"upload_pdf":"Upload een .pdf-bestand"},"favicon":{"upload_ico":"Upload een .ico-bestand"},"contact":{"address":"Adres","phone":"Telefoon","email":"E-mail"},"error_messages":{"file_too_large":"Dit bestand is te groot!","logged_out":"Je bent uitgelogd, log opnieuw in","missing_website":"Je website is niet gevonden","no_id":"Er is geen ID meegegeven","no_block_id":"No block ID defined","no_block_found":"No block found with this ID: ","invalid_id_get":"ID is not valid in GET request","no_website_id":"No website ID found in URL","no_table_found":"Table for block not found: ","no_sexy_id":"Geen sexy ID gevonden","no_sexy":"Geen sexy gevonden","required_fields":"Heb je alle verplichte velden ingevuld?","no_sexy_created":"Maak eerst een nieuwe sectie aan","no_website_created":"Het lijkt er op dat er geen website is aangemaakt","no_column_created":"Maak eerst een nieuwe kolom aan","media_undefined":"Geef wel aan of dit een media-element is","inexistent_column":"Deze kolom bestaat niet, probeer een andere","inexistent_sexy":"Deze sectie bestaat niet, probeer een andere","no_data_found":"Whoepsie, geen gegevens gevonden","element_failure":"Sorry, dit element kan je nog niet bewerken","change_failure":"Deze wijziging komt niet goed door","wrong_request":"The AJAX request is wrong and cannot be answered","delete_element_failure":"Er zijn geen elementen verwijderd","delete_sexy_failure":"Er zijn geen secties verwijderd","no_email":"Vul wel een e-mailadres in","wrong_email":"Dit e-mailadres kan geen e-mails ontvangen, gebruik een echt e-mailadres'","no_email_no_password":"Vul wel je e-mailadres en je wachtwoord in!","spambot":"Je lijkt een spambot","signup_failure":"Mislukt om je aan te melden, mail ons even","cookies":"Het lijkt erop dat je cookies blokkeert, herlaad de pagina.","save_to_database":"Het opslaan in de database is niet gelukt","vague":"Er gaat iets mis!"},"column_change":{"error_messages":{"no_side_chosen":"Geef wel een zijde aan waar de kolom moet komen","max_6_columns":"Er mogen maximaal 6 kolommen geplaatst worden","add_column_failure":"Het toevoegen van de kolom is niet helemaal gelukt"}},"save_demo":{"error_messages":{"no_email":"Vul wel een e-mailadres in, anders kunnen we je jouw site niet opslaan.","no_valid_email":"Vul wel een geldig e-mailadres in","no_valid_email_in_the_end":"Het lijkt erop dat jouw e-mailadres niet klopt, probeer het met een ander e-mailadres."},"messages":{"website_saved_header":"Jouw website is opgeslagen!","website_saved_message":"<p>Houd de inbox van <em>%s<\/em> in de gaten, er is een e-mail met verdere instructies verzonden.<\/p>","confirmation_email_subject":"Jouw eerstelinks website is opgeslagen","confirmation_email_content":"<p>Hoi %s,<\/p><p>Leuk dat je met ons product aan de slag bent gegaan! Je website is opgeslagen en zal 10 dagen gratis online staan. Om de website later te kunnen wijzigen (en voor de mobiele app) heb je een wachtwoord nodig.<\/p><p><em>Dit wachtwoord kan je aanmaken via de onderstaande link:<\/em><br><a href='http:\/\/eerstelinks.nl\/opslaan\/%s\/%s'>Maak een persoonlijk wachtwoord aan<\/a><\/p><p>Met de app (download hem <a href='http:\/\/eerstelinks.nl\/app'>hier<\/a>) kun je foto's direct vanaf je telefoon op je website plaatsen!<\/p><p>Zelf vinden we ons product fantastisch en we doen er alles aan om ervoor te zorgen dat jij dat ook vindt. Dus als je vragen of opmerkingen hebt horen wij die graag. Je kan ons bereiken via <a href='https:\/\/twitter.com\/eerstelinks'>Twitter<\/a>, <a href='https:\/\/facebook.com\/eerstelinks'>Facebook<\/a> of via <a href='mailto:info@eerstelinks.nl'>e-mail<\/a>.<\/p>"}},"general_settings":{"no_website_name":"Je website heeft een naam nodig!","no_language":"Selecteer minimaal 1 taal"},"signup":{"fill_or_skip":"Vul alle velden in of sla deze stap over","invalid_pathname":"De website link is niet geldig. Probeer iets anders, bijvoorbeeld %s","occupied_pathname":"Deze link is al bezet, kies een andere","no_website_found":"Geen website gevonden met deze code, het kan zijn dat je al een wachtwoord gekozen hebt.","confirmation_email_subject":"Account gegevens voor eerstelinks","confirmation_email_content":"<p>Je account is opgeslagen en dit zijn je gegevens:<\/p><p><ul><li>Website: <a href='%s'>%s<\/a><\/li><li>Gebruikersnaam: %s<\/li><li>Wachtwoord: %s<\/li><\/ul><\/p><p>Je kunt nu inloggen op je eigen website en op onze <a href='http:\/\/eerstelinks.nl\/app'>mobiele app<\/a>. Je website is 10 dagen gratis, daarna gaan we je vragen om een pakket te kiezen. Je kunt <a href='http:\/\/eerstelinks.nl\/#prijzen'>hier<\/a> meer informatie vinden en eventueel alvast een keuze maken.<\/p><p>Dit willen we nog even zeggen: We helpen je graag. Samen met jou willen we een top-website bouwen. Aarzel dan ook niet om je vragen en opmerkingen naar ons door te sturen via <a href='https:\/\/twitter.com\/eerstelinks'>Twitter<\/a>, <a href='https:\/\/facebook.com\/eerstelinks'>Facebook<\/a> of <a href='mailto:info@eerstelinks.nl'>e-mail<\/a><\/p>","signup_success":"Je aanmelding is verwerkt, we nemen snel contact met je op!"},"premium_feature":{"no_name":"De naam van deze feature is niet gevonden","feature_not_found":"Deze feature is niet gevonden, waarschijnlijk is het verlopen","feature_active":"Deze feature is al actief","one_language":"Deze feature kan alleen uitgezet worden als er 1 taal is geselecteerd. Selecteer 1 taal, klik op 'Opslaan' en keer terug naar dit venster om de feature uit te zetten.","activation_email_subject":"De betaalde feature %s is geactiveerd","activation_email_content":"<p>Niets is vervelender dan onverwachte kosten, dus lees deze e-mail goed!<\/p><p>Je hebt zojuist de %s-feature geactiveerd. Dit is een premium-feature en deze kost &euro; %g (excl. BTW) per maand.<\/p><p>De 1<sup>e<\/sup> dag is gratis en zet je de feature vandaag weer uit, dan worden er ook geen kosten berekend.<\/p><p>Besluit je om de feature te blijven gebruiken, dan worden de extra kosten per dag berekend en deze worden tegelijk gefactureerd met de normale abonnementskosten. Betaal je per jaar, dan worden de kosten aan het eind van het betaaljaar in rekening gebracht. Betaal je per maand, dan verschijnen de kosten op de rekening van elke volgende maand.<\/p><p>Is er iets niet helemaal duidelijk, neem dan contact met ons op via <a href='https:\/\/twitter.com\/eerstelinks'>Twitter<\/a>, <a href='https:\/\/facebook.com\/eerstelinks'>Facebook<\/a> of <a href='mailto:info@eerstelinks.nl'>e-mail<\/a>. Wij helpen je graag!<\/p>"},"sexy":{"no_sexy_name":"Vergeet niet om deze sectie een naam te geven. Deze zal zichtbaar zijn in de navigatiebalk"},"tutorial":{"oops":"Oeps, dit kunnen we niet opslaan, of het heeft dezelfde waarde"},"devicechecker":{"outdated_browser_message":"Jouw versie van %s is verouderd! <a href='%s' target='_blank'>Download een nieuwe versie<\/a> voor optimaal gebruik."},"light_in_the_dark":{"step1":"Geef je website hier een naam","step2":"Vul hier de naam van jouw website in","step3":"Klik hier om de gegevens op te slaan","step4":"Hier maak je een pagina aan, wij noemen dat secties","step5":"Vul hier een sectie-naam in, bijvoorbeeld: Welkom","step6":"Klik hier om een achtergrond te kiezen","step7":"Upload een foto van je computer","step8":"Laten we hier wat tekst toevoegen!'","step9":"Klik op deze knop","step10":"Leg kort uit waarom ik deze site straks ga bezoeken","step11":"Laten we hier een foto toevoegen!","step12":"Klik op deze knop","step13":"Zo, nu is het tijd om je site op te slaan!<br><a href='javascript:void(0)' class='btn btn-inverse btn-mini restart-tutorial'><i class='icon-repeat'><\/i> Begin rondleiding opnieuw<\/a>'"},"website2":{"create_sexy":"sectie","logout":"Uitloggen","login_email":"e-mailadres","login_email_placeholder":"je-email@adres.nl","login_password":"wachtwoord","loading":"laden...","move_column_left":"Verplaats kolom naar links","move_column_right":"Verplaats kolom naar rechts","delete_column":"Verwijder deze kolom","add_column":"Voeg kolom toe","add_element":"Voeg een element toe"},"common_functions":{"no_module":"<p>Het lijkt erop dat we nog geen module hebben voor het %s type<\/p>","reload_page":"Herlaad de pagina","address_change":"<td>Wijzig hier je adres<\/td>","facebook_url_not_found":"Facebook URL niet gevonden, wijzig dit","untranslated_text":"Deze tekst is nog niet vertaald, klik op de tekst om het te vertalen. <small>(dit bericht is niet zichtbaar voor bezoekers)<\/small>","signature":"<p>Met vriendelijke groet,<\/p>"},"login":{"general_error":"Er gaat iets met met inloggen, contact us for help","no_connection":"Kan geen verbinding tot stand brengen, contacteer de gratis helpdesk","no_hash":"Wachtwoord kan niet gehashd worden","send_session":"Stuur een sessie mee","no_session_found":"Geen sessies gevonden","login_failure":"Inloggen is mislukt, probeer opnieuw"},"order":{"script_failure":"Het script kan de volgorde niet uitlezen","save_failure":"Mislukt om de sectie-volgorde op te slaan","save_element_order_failure":"Het is niet gelukt de volgorde van elementen op te slaan","no_data":"We hebben geen data ontvangen","function_not_ready":"Deze functie is niet af"}};
+    </script>
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">J. Mulder Houtimport BV</a>
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="#product">Product</a></li>
+                        <li><a href="#houtsoorten">Houtsoorten</a></li>
+                        <li><a href="#duurzaam-ondernemen">Duurzaam ondernemen</a></li>
+                        <li><a href="#werkwijze">Werkwijze</a></li>
+                        <li><a href="#actueel-info-en-fotos-jmh">Actueel, info en foto's JMH</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        
+    <li>
+        <a href="en.html" class="single-flag"><img src="assets/flags/en.png" alt="current language flag" /></a>
+    </li>
+
+                        <li>
+                            <a href="javascript:void(0)" class="toggle-toolbox hidden-phone"><i class="icon-wrench icon-white"></i> </a>
+
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div>
+
+            <!-- This is to enter your details to log in to the awesome -->
+            <div class="toolbox hidden-phone container">
+                <form class="form-inline login-form" method="post">
+                    <div class="alert alert-info inlog-error">Jouw versie van deze browser is bij ons onbekend of is verouderd! <a href='http://browsehappy.com/' target='_blank'>Download een nieuwe versie</a> voor optimaal gebruik.</div>                    <input type="hidden" name="pathname" value="mulderhoutimport" />
+
+                    <label>e-mailadres</label>
+                    <input type="email" name="username" value="" placeholder="je-email@adres.nl" />
+
+                    <label>wachtwoord</label>
+                    <input type="password" name="password" placeholder="" />
+
+                    <input type="submit" value="log in" class="btn btn-success" />
+                    <img class="default-hide loader-login loader" src="img/loader.gif" alt="laden..." />
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- for modals -->
+    <div class="modal-container"></div>
+
+    <!-- for aviary -->
+    <div id='injection_site'></div>
+
+        <div class="sexy" id="sexy_604">
+            <div class="jump-to" id="home"></div>
+            <div class="glasses">
+                <div class="sexy-up default-hide"><a href="#"><i class="icon-circle-arrow-up"></i></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="row inner">
+<li class="span5 lovebox" data-column="1651"><div class="drag"></div><ul class="shell"><li class="editable" id="3764">
+<div style="text-align: left">
+<img id="image-3764" src="uploads/images/jmh_20130926154445.png" alt="" />
+</div>
+</li><li class="editable" id="3765">
+<h3>Welkom bij J. Mulder Houtimport BV</h3>
+</li><li class="editable" id="3763">
+<p>J. Mulder Houtimport (JMH) is gespecialiseerd in de import van hout- en houtgerelateerde producten voor industrie en handel. Sinds de start in 1956 richt ons beleid zich op:<br><ul><li>De inkoop van een kwalitatief goed product tegen de juiste prijs</li><li>Het op verantwoorde wijze omgaan met hout en het milieu</li><li>Het zijn van een betrouwbare en langdurige partner</li></ul><p><br>JMH streeft er naar op iedere aanvraag een passend antwoord te vinden. Dit geschiedt in nauw contact met onze afnemers en leveranciers. Deze worden hiertoe ook regelmatig bezocht. Goede relaties leiden niet alleen tot betere kwaliteit en betrouwbaarheid, het maakt ook het zaken doen een stuk prettiger.<br></p><p><br></p><p><br></p></p>
+</li></ul></li><li class="span7 art album editable" id="3762" style="background-color: #333333;" data-column="1650"><div class="drag"></div><div class="superslideshow"><div class="slideshow-controls"> <a class="active" href="javascript:void(0)" data-show-image="4575"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4576"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4577"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4578"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4579"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4580"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4581"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4582"><i class="icon icon-circle"></i></a> <a href="javascript:void(0)" data-show-image="4583"><i class="icon icon-circle"></i></a></div><div class="slimage" id="image-4575" style="background-image: url(uploads/images/jmh_20131118115436.jpg)"></div><div class="slimage" id="image-4576" style="background-image: url(uploads/images/jmh_20131118115904.jpg)"></div><div class="slimage" id="image-4577" style="background-image: url(uploads/images/jmh_20131118162625.jpg)"></div><div class="slimage" id="image-4578" style="background-image: url(uploads/images/jmh_20131118124831.jpg)"></div><div class="slimage" id="image-4579" style="background-image: url(uploads/images/jmh_20131118115059.jpg)"></div><div class="slimage" id="image-4580" style="background-image: url(uploads/images/jmh_20131118130409.jpg)"></div><div class="slimage" id="image-4581" style="background-image: url(uploads/images/jmh_20131118125813.jpg)"></div><div class="slimage" id="image-4582" style="background-image: url(uploads/images/jmh_20131118124344.jpg)"></div><div class="slimage" id="image-4583" style="background-image: url(uploads/images/jmh2_20140119104938.png)"></div></div></li>                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /container -->
+                <div class="sexy-down "><a href="#product"><i class="icon-circle-arrow-down"></i></a></div>
+
+            </div>  <!-- /glasses -->
+        </div>  <!-- /sexy -->
+
+        <div class="sexy" id="sexy_608">
+            <div class="jump-to" id="product"></div>
+            <div class="glasses">
+                <div class="sexy-up "><a href="#home"><i class="icon-circle-arrow-up"></i></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="row inner">
+<li class="span5 lovebox" data-column="1660"><div class="drag"></div><ul class="shell"><li class="editable" id="3791">
+<div style="text-align: left">
+<img id="image-3791" src="uploads/images/jmh_20130926180004.png" alt="" />
+</div>
+</li><li class="editable" id="3800">
+<h3>JMH levert o.a.:</h3>
+</li><li class="editable" id="3794">
+<h4>Kozijn-, trap- en deurhout</h4>
+</li><li class="editable" id="3801">
+<ul><li>gezaagd hout</li><li>profielhout, binnendeurkozijnen en stofdorpels</li><li>trapspijlen en -regels, leuningen</li></ul>
+</li><li class="editable" id="3806">
+<p></p>
+</li><li class="editable" id="3795">
+<h4>Glaslatten</h4>
+</li><li class="editable" id="3793">
+<h4>Timmerpanelen, werkbladen en meubelhout</h4>
+</li><li class="editable" id="3808">
+<h4><b>Timmerhout</b><br></h4>
+</li><li class="editable" id="3799">
+<ul><li>gezaagd hout</li><li>schaaflatten en saunalatten</li><li>Balsa hout</li></ul>
+</li><li class="editable" id="3809">
+<p></p>
+</li><li class="editable" id="3792">
+<h4>Profielen en lijsten</h4>
+</li><li class="editable" id="3802">
+<ul><li>koplatten, plinten en deurlijsten</li><li>interieurlijsten en ronde stokken</li></ul>
+</li><li class="editable" id="3803">
+<p></p>
+</li><li class="editable" id="3796">
+<h4>Diverse stelen</h4>
+</li><li class="editable" id="3805">
+<ul><li>bezemstelen, strandstokken</li><li>vlaggestelen</li></ul>
+</li><li class="editable" id="3807">
+<p></p>
+</li><li class="editable" id="3797">
+<h4>Tuinhout</h4>
+</li><li class="editable" id="3798">
+<h4>Tuinmeubelen</h4>
+</li><li class="editable" id="3804">
+<h4>Vloerdelen</h4>
+</li></ul></li><li class="span7 art album editable" id="3790" style="background-color: #333333;" data-column="1659"><div class="drag"></div><div class="gallery1"><div class="album-title">JMH biedt een breed assortiment aan houtproducten uit Azie, Zuid-Amerika en Oost-Europa</div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Gezaagd hout</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193612.png" data-fancybox-title="Gezaagd hout - In diverse houtsoorten, w.o. Rode, witte, gele Meranti, Nyatoh."><img src="image/500/500/uploads/images/jmh2_20140114193612.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Kozijn-, trap- en deurhout</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193616.png" data-fancybox-title="Kozijn-, trap- en deurhout - Ruw, geschaafd, gevingerlast. Profielhout, w.o. ABC profielen. Binnendeurkozijnen. Voornamelijk in Rode Meranti."><img src="image/500/500/uploads/images/jmh2_20140114193616.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Traphout</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193621.png" data-fancybox-title="Traphout - Hout tbv. trapbomen, traptreden, trapspijlen, maar ook kant-en-klare regels. Desgewenst gegrond, voorzien van boorgaten, etc."><img src="image/500/500/uploads/images/jmh2_20140114193621.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Glaslatten</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193625.png" data-fancybox-title="Glaslatten - Standaard profiel, neuslatten, ventilatielatten. Blank, gegrond. KOMO/non komo. Voornamelijk in Rode Meranti."><img src="image/500/500/uploads/images/jmh2_20140114193625.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Timmerpanelen en werkbladen</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193631.png" data-fancybox-title="Timmerpanelen en werkbladen - Ook meubelhout. In diverse houtsoorten, w.o. Beuken, Eiken, Nyatoh, Pine, Rode Meranti, Rubberhout en Teak."><img src="image/500/500/uploads/images/jmh2_20140114193631.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Balsa</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193636.png" data-fancybox-title="Balsa - Tbv. modelbouw, surf en kite planken, windmolens, treinen."><img src="image/500/500/uploads/images/jmh2_20140114193636.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Schaaflatten</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193640.png" data-fancybox-title="Schaaflatten - Blank, gegrond. In hardhout (o.a. Rode Meranti, Nyatoh) en Pine (Radiata Pine)."><img src="image/500/500/uploads/images/jmh2_20140114193640.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Plinten, koplatten en deurlijsten</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193646.png" data-fancybox-title="Plinten, koplatten en deurlijsten - Onbehandeld, gegrond en gelakt. Deurlijsten en chambranles ook in sets. Voornamelijk in hardhout."><img src="image/500/500/uploads/images/jmh2_20140114193646.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Ronde stokken en interieurlijsten</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193654.png" data-fancybox-title="Ronde stokken en interieurlijsten - In diverse houtsoorten, w.o. Mahogany, Nyatoh, Pine, Ramin, Rode, witte en gele Meranti."><img src="image/500/500/uploads/images/jmh2_20140114193654.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Bezemstelen en vlaggestelen</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193658.png" data-fancybox-title="Bezemstelen en vlaggestelen - Desgewenst voorzien van rond kopje/punt, handvat, etc. In diverse houtsoorten."><img src="image/500/500/uploads/images/jmh2_20140114193658.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Tuinhout</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193703.png" data-fancybox-title="Tuinhout - Tbv. antislip, regels, palen, schermen, tegels, etc. In diverse houtsoorten, w.o. Bangkirai, Kapur, Kempas en Keruing."><img src="image/500/500/uploads/images/jmh2_20140114193703.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Tuinmeubelen</p></div><a class="fancybox" rel="gallery3790" href="image/1000/1000/uploads/images/jmh2_20140114193708.png" data-fancybox-title="Tuinmeubelen - In Teak vanuit Indonesie. Voorts wicker en rotan."><img src="image/500/500/uploads/images/jmh2_20140114193708.png" /></a></div></div></li>                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /container -->
+                <div class="sexy-down "><a href="#houtsoorten"><i class="icon-circle-arrow-down"></i></a></div>
+
+            </div>  <!-- /glasses -->
+        </div>  <!-- /sexy -->
+
+        <div class="sexy" id="sexy_610">
+            <div class="jump-to" id="houtsoorten"></div>
+            <div class="glasses">
+                <div class="sexy-up "><a href="#product"><i class="icon-circle-arrow-up"></i></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="row inner">
+<li class="span6 lovebox" data-column="1664"><div class="drag"></div><ul class="shell"><li class="editable" id="3816">
+<div style="text-align: left">
+<img id="image-3816" src="uploads/images/jmh_20130926180017.png" alt="" />
+</div>
+</li><li class="editable" id="3820">
+<h3>JMH levert diverse houtsoorten:</h3>
+</li><li class="editable" id="3817">
+<h4><br></h4><h4>Vanuit (Zuid-Oost) Azie o.a.</h4><ul><li>Bangkirai, Kapur, Kempas, Keruing</li><li>Rode Meranti, Witte/gele Meranti, Nyatoh, Ramin</li><li>Balsa, Durian, Mahogany, Paulownia, Teak</li><li>Radiata Pine</li><li>Rubberhout. </li></ul><br>
+</li><li class="editable" id="3818">
+<h4>Vanuit Zuid-Amerika o.a.</h4><ul><li>Cambara, Marupa, Tauari</li><li>Elliotti Pine</li><li>Ipe, Massaranduba</li></ul><br>
+</li><li class="editable" id="3819">
+<h4>Vanuit Oost-Europa o.a.</h4><ul><li>Beuken</li><li>Eiken</li></ul>
+</li><li class="editable" id="3821">
+<h4><br></h4><h4><br></h4><h4><br></h4><h4>NB: <i>vrijwel alle genoemde houtsoorten zijn leverbaar met een FSC® certificaat. Vraag naar onze mogelijkheden.</i></h4>
+</li></ul></li><li class="span6 art album editable" id="3815" style="background-color: #333333;" data-column="1663"><div class="drag"></div><div class="gallery1"><div class="album-title">JMH levert een scala aan houtsoorten</div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Bangkirai</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131229222139.jpg" data-fancybox-title="Bangkirai - Toepassing JMH: antislip, onderregels, tuinschermen, palen, tegels"><img src="image/500/500/uploads/images/jmh_20131229222139.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Balsa</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131229223257.jpg" data-fancybox-title="Balsa - Toepassing JMH: modelbouw, professionele bouw (windmolen, trein)"><img src="image/500/500/uploads/images/jmh_20131229223257.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Keruing</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131229223832.jpg" data-fancybox-title="Keruing - Toepassing JMH: antislip, onderregels, tuinschermen, tegels"><img src="image/500/500/uploads/images/jmh_20131229223832.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Ramin</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131229224522.jpg" data-fancybox-title="Ramin - Toepassing JMH: stokken, spijlen"><img src="image/500/500/uploads/images/jmh_20131229224522.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Mahogany</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230204534.jpg" data-fancybox-title="Mahogany - Toepassing JMH: raam-/kozijn- en deurhout, lijstwerk, plinten, spijlen, regels, etc."><img src="image/500/500/uploads/images/jmh_20131230204534.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Pine</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230204122.jpg" data-fancybox-title="Pine - Toepassing JMH: aftimmerhout, timmerpanelen."><img src="image/500/500/uploads/images/jmh_20131230204122.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Teak</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230095947.jpg" data-fancybox-title="Teak - Toepassing JMH: tuintafels, tuinstoelen, timmerpanelen. "><img src="image/500/500/uploads/images/jmh_20131230095947.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Marupa</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230100334.jpg" data-fancybox-title="Marupa - Toepassing jMH: lijstwerk."><img src="image/500/500/uploads/images/jmh_20131230100334.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Eiken</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230100706.jpg" data-fancybox-title="Eiken - Toepassing JMH: lijstwerk, timmerpanelen, werkbladen."><img src="image/500/500/uploads/images/jmh_20131230100706.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Beuken</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230204900.jpg" data-fancybox-title="Beuken - Toepassing jMH: timmerpanelen, werkbladen, spijlen, stokken."><img src="image/500/500/uploads/images/jmh_20131230204900.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Rode Meranti</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230094913.jpg" data-fancybox-title="Rode Meranti - Toepassing JMH: gezaagd hout, raam-, kozijn-, deuhout, timmerpanelen, lijstwerk, glaslatten, plinten, spijlen, regels, etc."><img src="image/500/500/uploads/images/jmh_20131230094913.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Nyatoh</p></div><a class="fancybox" rel="gallery3815" href="image/1000/1000/uploads/images/jmh_20131230205225.jpg" data-fancybox-title="Nyatoh - Toepassing JMH: gezaagd hout, timmerpanelen, werkbladen, meubelhout, lijstwerk, plinten, spijlen, etc."><img src="image/500/500/uploads/images/jmh_20131230205225.jpg" /></a></div></div></li>                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /container -->
+                <div class="sexy-down "><a href="#duurzaam-ondernemen"><i class="icon-circle-arrow-down"></i></a></div>
+
+            </div>  <!-- /glasses -->
+        </div>  <!-- /sexy -->
+
+        <div class="sexy" id="sexy_605">
+            <div class="jump-to" id="duurzaam-ondernemen"></div>
+            <div class="glasses">
+                <div class="sexy-up "><a href="#houtsoorten"><i class="icon-circle-arrow-up"></i></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="row inner">
+<li class="span6 lovebox" data-column="1652"><div class="drag"></div><ul class="shell"><li class="editable" id="3767">
+<div style="text-align: left">
+<img id="image-3767" src="uploads/images/jmh_20130926180028.png" alt="" />
+</div>
+</li><li class="editable" id="3766">
+<h3>JMH en duurzaam ondernemen</h3><p>J. Mulder Houtimport BV (JMH) wil op verantwoorde wijze met hout omgaan en wil niet betrokken zijn bij de verkoop van illegaal gekapt hout. Het bos is onze belangrijkste toeleverancier en als zodanig onze toekomst. Niet alleen voor ons als bedrijf, maar ook voor komende generaties. Het is voor JMH dan ook vanzelfsprekend om te voldoen aan de eisen die de nieuwe EUTR wetgeving met ingang van 3 maart 2013 stelt.</p><p>JMH is lid van de <b>VVNH (Vereniging van Nederlandse Houtondernemingen)</b> en heeft mede het beleidsplan 2010-2015 "Bewust met hout" ondertekend. JMH verkoopt bij voorkeur hout uit duurzaam beheerde bossen. In 2018 is circa 75% van onze aanvoer aantoonbaar duurzaam en verantwoord (met FSC®)</p><p>JMH is sinds 24 oktober 2002 <b>FSC® gecertificeerd onder SGSCH-COC-001198</b> en streeft er naar zoveel mogelijk hout met FSC® certificaat te importeren. JMH werkt hierbij nauw samen met leveranciers die reeds beschikken over een FSC® certificaat, zowel als met leveranciers die zich daartoe aantoonbaar willen ontwikkelen. Daarbij wordt niet geschroomd om naast bekende houtsoorten ook nieuwe houtsoorten met FSC® te ontwikkelen in samenwerking met afnemer en leverancier.</p><br><br><br><br><br>
+</li></ul></li><li class="span6 art album editable" id="3768" style="background-color: #333333;" data-column="1653"><div class="drag"></div><div class="gallery1"><div class="album-title">JMH streeft naar import van duurzaam hout</div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Lid VVNH</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh_20140102104001.png" data-fancybox-title="Lid VVNH - JMH onderschrijft VVNH Beleidsplan 2010-2015"><img src="image/500/500/uploads/images/jmh_20140102104001.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>FSC bos</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh2_20140114194557.png" data-fancybox-title="FSC bos"><img src="image/500/500/uploads/images/jmh2_20140114194557.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>FSC plantage</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh2_20140114194602.png" data-fancybox-title="FSC plantage"><img src="image/500/500/uploads/images/jmh2_20140114194602.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>FSC keurmerk</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh2_20140114194606.png" data-fancybox-title="FSC keurmerk"><img src="image/500/500/uploads/images/jmh2_20140114194606.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>FSC stammen</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh2_20140114194611.png" data-fancybox-title="FSC stammen"><img src="image/500/500/uploads/images/jmh2_20140114194611.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>FSC gezaagd hout</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh2_20140114194615.png" data-fancybox-title="FSC gezaagd hout"><img src="image/500/500/uploads/images/jmh2_20140114194615.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>FSC eindproduct</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh2_20140114194621.png" data-fancybox-title="FSC eindproduct"><img src="image/500/500/uploads/images/jmh2_20140114194621.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>FSC gevingerlast gelamineerd product</p></div><a class="fancybox" rel="gallery3768" href="image/1000/1000/uploads/images/jmh2_20140114194625.png" data-fancybox-title="FSC gevingerlast gelamineerd product"><img src="image/500/500/uploads/images/jmh2_20140114194625.png" /></a></div></div></li>                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /container -->
+                <div class="sexy-down "><a href="#werkwijze"><i class="icon-circle-arrow-down"></i></a></div>
+
+            </div>  <!-- /glasses -->
+        </div>  <!-- /sexy -->
+
+        <div class="sexy" id="sexy_607">
+            <div class="jump-to" id="werkwijze"></div>
+            <div class="glasses">
+                <div class="sexy-up "><a href="#duurzaam-ondernemen"><i class="icon-circle-arrow-up"></i></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="row inner">
+<li class="span6 lovebox" data-column="1658"><div class="drag"></div><ul class="shell"><li class="editable" id="3787">
+<div style="text-align: left">
+<img id="image-3787" src="uploads/images/jmh_20130926180039.png" alt="" />
+</div>
+</li><li class="editable" id="3781">
+<h3>Werkwijze - JMH</h3>
+</li><li class="editable" id="3788">
+<h4>Kwaliteitseisen JMH</h4>
+</li><li class="editable" id="3789">
+<p></p>
+</li><li class="editable" id="3782">
+<p>Kwaliteitscontroles vinden plaats bij de leverancier op basis van door JMH opgestelde kwaliteitseisen. Of het nu gaat om het juiste vochtpercentage, de maatvoering, het profiel, de vingerlas, laminatie, de verfapplicatie en/of de kleur, JMH zit er boven op.</p>
+</li><li class="editable" id="3783">
+<h4>Eigen JMH inspecteurs ter plaatse</h4>
+</li><li class="editable" id="3784">
+<p>JMH beschikt over eigen inspecteurs ter plaatse, die Uw product tijdens alle fasen van productie, alswel voorafgaand aan de afscheep, nauwlettend in de gaten houden. Kwaliteit en zo kort mogelijke doorlooptijden staan centraal. NB: onze activiteiten en inspecties in Z-O-Azie worden vanuit Jakarta/Indonesie gecoördineerd.</p>
+</li><li class="editable" id="3785">
+<h4>Verpakking en tijdige aflevering</h4>
+</li><li class="editable" id="3786">
+<p>Ook de gewenste verpakking, al dan niet in sets, (incl. inlegvel, barcode, folie, etc), de verscheping (w.o.optimale belading) tot aan inklaring en aflevering zijn bij JMH in goede handen.</p>
+</li></ul></li><li class="span6 art album editable" id="3780" style="background-color: #333333;" data-column="1657"><div class="drag"></div><div class="gallery1"><div class="album-title">Werkwijze JMH</div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Meting vochtpercentage</p></div><a class="fancybox" rel="gallery3780" href="image/1000/1000/uploads/images/jmh2_20140114195045.png" data-fancybox-title="Meting vochtpercentage"><img src="image/500/500/uploads/images/jmh2_20140114195045.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Trainen productiemedewerkers</p></div><a class="fancybox" rel="gallery3780" href="image/1000/1000/uploads/images/jmh2_20140114195048.png" data-fancybox-title="Trainen productiemedewerkers"><img src="image/500/500/uploads/images/jmh2_20140114195048.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Controleren maatvoering</p></div><a class="fancybox" rel="gallery3780" href="image/1000/1000/uploads/images/jmh2_20140114195052.png" data-fancybox-title="Controleren maatvoering"><img src="image/500/500/uploads/images/jmh2_20140114195052.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Controleren maatvoering</p></div><a class="fancybox" rel="gallery3780" href="image/1000/1000/uploads/images/jmh2_20140114195056.png" data-fancybox-title="Controleren maatvoering"><img src="image/500/500/uploads/images/jmh2_20140114195056.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Controleren kwaliteit</p></div><a class="fancybox" rel="gallery3780" href="image/1000/1000/uploads/images/jmh2_20140114195101.png" data-fancybox-title="Controleren kwaliteit"><img src="image/500/500/uploads/images/jmh2_20140114195101.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>Controleren verfapplicatie</p></div><a class="fancybox" rel="gallery3780" href="image/1000/1000/uploads/images/jmh2_20140114195105.png" data-fancybox-title="Controleren verfapplicatie"><img src="image/500/500/uploads/images/jmh2_20140114195105.png" /></a></div></div></li>                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /container -->
+                <div class="sexy-down "><a href="#actueel-info-en-fotos-jmh"><i class="icon-circle-arrow-down"></i></a></div>
+
+            </div>  <!-- /glasses -->
+        </div>  <!-- /sexy -->
+
+        <div class="sexy" id="sexy_609">
+            <div class="jump-to" id="actueel-info-en-fotos-jmh"></div>
+            <div class="glasses">
+                <div class="sexy-up "><a href="#werkwijze"><i class="icon-circle-arrow-up"></i></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="row inner">
+<li class="span7 lovebox" data-column="1662"><div class="drag"></div><ul class="shell"><li class="editable" id="3812">
+<div style="text-align: left">
+<img id="image-3812" src="uploads/images/jmh_20130926180051.png" alt="" />
+</div>
+</li><li class="editable" id="3811">
+<h2>JMH - info</h2>
+</li><li class="editable" id="3814">
+<h4>Actueel, toen en nu:</h4><ul><li>december 2001: 1e FSC® hout uit Indonesie in Nederland via JMH</li><li>oktober 2002: JMH is FSC® gecertificeerd</li><li>november 2012: JMH ontvangt eerste vracht V-legal hout uit Indonesie</li><li>september 2013: ondertekening VPA door EU en Indonesie</li></ul><div><br></div>
+</li><li class="editable" id="3813">
+<h4>De volgende pdf bestanden zijn beschikbaar:</h4><ul><li><a target="_blank" href="http://eerstelinks.nl/uploads/documents/mulderhoutimport_20191014140055.pdf">FSC® certificaat</a>  </li><li> <a target="_blank" href="http://eerstelinks.nl/uploads/documents/mulderhoutimport_20191014151216.pdf">Algemene verkoopvoorwaarden VVNH</a></li></ul><br>
+</li></ul></li><li class="span5 art album editable" id="3810" style="background-color: #333333;" data-column="1661"><div class="drag"></div><div class="gallery1"><div class="album-title">JMH - heden en verleden</div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>J. Mulder grondlegger JMH</p></div><a class="fancybox" rel="gallery3810" href="image/1000/1000/uploads/images/jmh_20131230224009.jpg" data-fancybox-title="J. Mulder grondlegger JMH - Jan Mulder begint in 1956 met de handel in hout vanuit Zuid-Amerika."><img src="image/500/500/uploads/images/jmh_20131230224009.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>J.C. Mulder</p></div><a class="fancybox" rel="gallery3810" href="image/1000/1000/uploads/images/jmh_20131230224826.jpg" data-fancybox-title="J.C. Mulder - J.C. Mulder breidt de handel, in de zeventiger jaren van de vorige eeuw, uit met de import vanuit Zuid-Oost Azie"><img src="image/500/500/uploads/images/jmh_20131230224826.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>J.P. Mulder</p></div><a class="fancybox" rel="gallery3810" href="image/1000/1000/uploads/images/jmh_20131230225223.png" data-fancybox-title="J.P. Mulder - Bezoek Zuid-Amerika"><img src="image/500/500/uploads/images/jmh_20131230225223.png" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>J.P. Mulder</p></div><a class="fancybox" rel="gallery3810" href="image/1000/1000/uploads/images/jmh_20131231092905.jpg" data-fancybox-title="J.P. Mulder - Kwaliteitscontrole FSC stammen door J.P. Mulder tijdens bezoek Indonesie"><img src="image/500/500/uploads/images/jmh_20131231092905.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>J.P. Mulder</p></div><a class="fancybox" rel="gallery3810" href="image/1000/1000/uploads/images/jmh_20131231170559.jpg" data-fancybox-title="J.P. Mulder - Aankomst eerste vracht V-legal hout uit Indonesie"><img src="image/500/500/uploads/images/jmh_20131231170559.jpg" /></a></div><div class="thumbnail-wrapper"><div class="thumbnail-overlay"><p>J.P. Mulder</p></div><a class="fancybox" rel="gallery3810" href="image/1000/1000/uploads/images/jmh_20131231093231.jpg" data-fancybox-title="J.P. Mulder - Bezoek Indonesie"><img src="image/500/500/uploads/images/jmh_20131231093231.jpg" /></a></div></div></li>                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /container -->
+                <div class="sexy-down "><a href="#contact"><i class="icon-circle-arrow-down"></i></a></div>
+
+            </div>  <!-- /glasses -->
+        </div>  <!-- /sexy -->
+
+        <div class="sexy" id="sexy_606">
+            <div class="jump-to" id="contact"></div>
+            <div class="glasses">
+                <div class="sexy-up "><a href="#actueel-info-en-fotos-jmh"><i class="icon-circle-arrow-up"></i></a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="row inner">
+<li class="span4 lovebox" data-column="1655"><div class="drag"></div><ul class="shell"><li class="editable" id="3775">
+<div style="text-align: left">
+<img id="image-3775" src="uploads/images/jmh_20130926180102.png" alt="" />
+</div>
+</li><li class="editable" id="3770">
+<h3>Contact</h3>
+</li><li class="editable" id="3771">
+<table class="table locationtable">
+<tr>
+<td>Adres:</td>
+<td>
+<span class="address-street">Suetersweg</span>
+<span class="address-number">4</span>
+<br />
+<span class="address-postalcode">7497MZ</span>
+<span class="address-city" id="address-city">Bentelo</span>
+</td>
+</tr>
+<tr>
+<td>Telefoon:</td>
+<td>
+<span class="address-telephone">+31 547 334420</span>
+</td>
+</tr>
+<tr>
+<td>E-mail:</td>
+<td>
+<span class="address-email"><script type='text/javascript'>var r = 'hr' + 'ef='; var s = 'ma' + 'ilto';var m = "<a "+r+'"'+s+':jpmul'+'der'+('a@bc.nl').charAt(1)+'m'+'ulderhoutimport'+'.'+'nl">'+'jpmul'+'der'+('a@bc.nl').charAt(1)+'m'+'ulderhoutimport'+'.'+'nl'+'</a>';document.write(m)</script></span>
+</td>
+</tr>
+</table>
+</li><li class="editable" id="3773">
+
+</li><li class="editable" id="3774">
+
+</li></ul></li><li class="span4 lovebox" data-column="1656"><div class="drag"></div><ul class="shell"><li class="editable" id="3777">
+<h3>Verstuur een bericht</h3>
+</li><li class="editable" id="3776">
+<form method="post" class="visiterForm modal hide fade" id="modal-85"><input type="hidden" name="current_lang_code" value="nl"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h3>Contact</h3></div><div class="modal-body"><div class="alert alert-info default-hide">Er gaat iets mis!</div><input type="hidden" name="formId" value="85"><input type="text" class="default-hide" name="super" value=""><table style="width: 100%"><tr><td><label>Naam <span class="muted">*</span></label></td><td><input class="input-block-level" type="text" name="name" placeholder="Naam"></td></tr><tr><td><label>Bedrijfsnaam</label></td><td><input class="input-block-level" type="text" name="company" placeholder="Naam"></td></tr><tr><td><label>Telefoon <span class="muted">*</span></label></td><td><input class="input-block-level" type="text" name="phone" placeholder="+31(0)10-000000"></td></tr><tr><td><label>E-mail <span class="muted">*</span></label></td><td><input class="input-block-level" type="email" name="email" placeholder="e-mail@adres.nl"></td></tr><tr><td><label>Opmerkingen <span class="muted">*</span></label></td><td><textarea class="input-block-level" rows="5" name="remarks"></textarea></td></tr></table><span class="help-block">* verplicht veld</span></div><div class="modal-footer"><a href="javascript:void(0)" class="btn" data-dismiss="modal" aria-hidden="true">Sluiten</a><input type="submit" class="btn btn-primary" value="Verstuur" /></div></form><p style="text-align:left"><a href="#modal-85" role="button" class="btn btn-large" data-toggle="modal">Contact</a></p>
+</li></ul></li><li class="span4 mouse-pointer art editable" onclick="window.open('http://goo.gl/maps/KXsg9', '_newtab');" id="3769" style="background-image: url(uploads/images/jmh_20130902180602.png);" data-column="1654"><div class="drag"></div></li>                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /container -->
+                <div class="sexy-down default-hide"><a href="#"><i class="icon-circle-arrow-down"></i></a></div>
+
+            </div>  <!-- /glasses -->
+        </div>  <!-- /sexy -->
+
+
+<script src="assets/jquery/jquery-1.8.2.min.js"></script>
+<script src="assets/jquery/jquery-ui-1.10.2.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min%EF%B9%96v2.3.1.js"></script>
+<script src="assets/fancybox/jquery.fancybox.pack%EF%B9%96v2.1.4.js"></script>
+
+<script src="js/base.js"></script>
+
+<!-- making the galleries work, this should be above genesis, because
+genesis must still resize the sexy-height afterwards -->
+<script src="js/gallery.js"></script>
+
+<script type="text/javascript">
+<!--
+    var width = window.innerWidth || document.documentElement.clientWidth;
+    if (width >= 768) {
+        document.write('<script type="text/javascript" src="/js/genesis.js"></script>');
+    }
+-->
+</script>
+
+<!-- javascript visible for visiters -->
+<script src="js/visitors.js"></script>
+
+<!-- login script for in toolbar -->
+<script src="js/login.js"></script>
+
+<!-- making the slideshows work -->
+<script src="js/slideshow.js"></script>
+
+<!-- we don't collect your personal data like IP address -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-37603858-16');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>
